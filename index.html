@@ -36,7 +36,10 @@
 </head>
 
 <body>
-
+  <audio controls autoplay hidden> 
+    <source src="GFG.ogg" type="audio/ogg"> 
+    <source src="GFG.mp3" type="audio/mpeg"> 
+</audio> 
   <!-- ======= Top Bar ======= -->
   <div id="topbar" class="d-flex align-items-center fixed-top">
     <div class="container d-flex justify-content-center justify-content-md-between">
@@ -78,26 +81,64 @@
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
-      <a href="#book-a-table" class="book-a-table-btn scrollto d-none d-lg-flex">Book Tayo</a>
+      <a href="#contact" class="book-a-table-btn scrollto d-none d-lg-flex">Contact</a>
 
     </div>
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
+  <section id="hero" class="d-flex align-items-center" data-aos="zoom-in" data-aos-delay="100">
     <div class="container position-relative text-center text-lg-start" data-aos="zoom-in" data-aos-delay="100">
       <div class="row">
-        <div class="col-lg-8">
-          <h1>Tayo <span>Conga</span> Africa</h1>
-          <h2>Where words fail, Music Speaks!</h2>
-
-          <div class="btns">
-            <a href="#about" class="btn-menu animated fadeInUp scrollto">About Me</a>
-            <a href="#gallery" class="btn-book animated fadeInUp scrollto">Gallery</a>
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
           </div>
-        </div>
-        <div class="col-lg-4 d-flex align-items-center justify-content-center position-relative" data-aos="zoom-in" data-aos-delay="200">
-          <a href="https://www.youtube.com/watch?v=St_j3TVUEGQ" class="glightbox play-btn"></a>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+      
+              <div class="container">
+                <div class="carousel-caption text-start">
+                  <h1>Example headline.</h1>
+                  <p>Some representative placeholder content for the first slide of the carousel.</p>
+                  <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+      
+              <div class="container">
+                <div class="carousel-caption">
+                  <h1>Another example headline.</h1>
+                  <p>Some representative placeholder content for the second slide of the carousel.</p>
+                  <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+      
+              <div class="container">
+                <div class="carousel-caption text-end">
+                  <h1>One more for good measure.</h1>
+                  <p>Some representative placeholder content for the third slide of this carousel.</p>
+                  <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
 
       </div>
@@ -119,43 +160,94 @@
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
             <h3>Tayo Conga Africa </h3>
             <p class="fst-italic">
-              Tumbadora Entertainment is a group of professional African
-              Percussionists from Nigeria led by the eclectic <strong>Tayo Conga </strong>. Over
-              time, the group has evolved to become a custodian and advocate
-              of arts, culture, and tourism in Nigeria. Tayo Conga Band specializes in generating rhythms from the African
-              drum to serenade guests at different functions with nonstop
-              melodies that radiates the atmosphere like fragrance. 
-            </p>
+              Ajayi Oluwatayo Oluwadamilare who goes by the popular stage name, Tayo Conga is a native of Erugbe, Ikogosi in Ekiti West Local Government of Ekiti state.
+Tayo Conga holds a degree in Philosophy from Olabisi Onabanjo University ,Ago-Iwoye ,Ogun State . After his university education ,he was posted to serve the one-year compulsory National Youth Service Corp (NYSC) at the Tourism Board of Delta State.             </p>
             <ul>
               <li><i class="bi bi-check-circle"></i> Sensational</li>
-              <li><i class="bi bi-check-circle"></i> Energetic Percussionists</li>
+              <li><i class="bi bi-check-circle"></i> Energetic </li>
               <li><i class="bi bi-check-circle"></i> Creative.</li>
-              <li><i class="bi bi-check-circle"></i> Nature Lover.</li>
-              <li><i class="bi bi-check-circle"></i> Birthday surprises.</li>
-              <li><i class="bi bi-check-circle"></i> Events.</li>
+              <li><i class="bi bi-check-circle"></i> Exceptional.</li>
+              <li><i class="bi bi-check-circle"></i> Passionaite.</li>
+              <li><i class="bi bi-check-circle"></i> Covers Events.</li>
             </ul>
             <p>
-              Tayo Conga has a unique and distinguished style of music, which
-              is a fusion of different musical influences and genre including
-              Apala, Salsa, Hip-hop, Afro, High Life, Afro-hip hop, Awurebe
-              amongst other. These fusions entertain diplomats, royalties,
-              corporate organizations, tourists, and travel enthusiasts with a
-              spice of percussions. Beyond entertainment, the Tumbadora
-              Group has a mission to inspire African youths to rise and make
-              the best use of their talent.
-            </p>
+              On completion of his service year, he joined a Debt recovery firm, where he worked as the Operations Officer briefly before switching fully to his passion in entertainment and tourism
+              Tayo Conga is presently a member of the music department of the Elevation Church in Lekki, Lagos where he contributes to the ministration of music with his prolific percussion skills. </p>
           </div>
         </div>
 
       </div>
     </section><!-- End About Section -->
-
-    <!-- ======= Why Us Section ======= -->
-    <section id="why-us" class="why-us">
+    <section id="specials" class="specials">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Why Tayo</h2>
+          <h2>ABOUT TAYO CONGA</h2>
+          <p></p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-3">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item">
+                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">HIS PHILOSOPHY</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Vision</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-3">HIS ENGAGEMENTS</a>
+              </li>
+          
+            </ul>
+          </div><!--212529 backround Color-->
+          <div class="col-lg-9 mt-4 mt-lg-0">
+            <div class="tab-content">
+              <div class="tab-pane active show" id="tab-1">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Tayo Conga hs an  energtic and African Aura  </h3>
+                    <p class="fst-italic">HAPPINESS– To put smiles on people's faces at all times through the power of the 'Conga'.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/chefs/chefs-3.jpg" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-2">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Tayo Conga aims to spotlight and propagate the African Traditional music using percussion.</h3>
+                    <p class="fst-italic"> He also aims to infuse the current West African Sounds (Afropop) with the African Traditional music (percussion).</p>
+                    <p> He strives to further spotlight the African Traditional sounds (percussion) on the world map.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/gallery/1.jpg" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-3">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <p>Tayo Congo has at different times worked with various Nigerian 'A-list' artistes of gospel and secular music. Some of these include Flavour, Wizkid, Banky W, Nathaniel Bassey, Sammie Okposo, Debo Ojubuyi (Zion Ilaje) among others. He has also featured at the back end of several music video productions and live concerts.</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/gallery/gallery-8.jpg" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us" hidden>
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>HIS PHILOSOPHY</h2>
           <p>Why Should I Pick Tayo Conga?</p>
         </div>
 
@@ -194,107 +286,23 @@ who is more than happy and ready to work with you, regarding any event or projec
 
       </div>
     </section><!-- End Why Us Section -->
-
-    <!-- ======= Menu Section ======= -->
-    <section id="gallery" class="gallery">
-
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <h2>Gallery</h2>
-          <p>Some photos Of me and the beautiful people and beautiful places I have been in Africa doing what I love doing the most</p>
-        </div>
-      </div>
-
-      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row g-0">
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-1.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/gallery-1.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-2.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/gallery-2.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-3.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/gallery-3.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-4.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/gallery-4.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-5.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/gallery-5.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-6.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/gallery-6.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-7.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/gallery-7.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-4">
-            <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-8.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/gallery-8.jpg" alt="" class="img-fluid">
-              </a>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Menu Section -->
-
     <section id="chefs" class="chefs">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Entertainer</h2>
-          <p>Tayo Conga is a very energetic and passionte percussionist</p>
+          <h2>Photo Reel</h2>
+          <p>Keeping the Conga alive</p>
         </div>
 
         <div class="row">
 
           <div class="col-lg-4 col-md-6">
             <div class="member" data-aos="zoom-in" data-aos-delay="100">
-              <img src="assets/img/chefs/chefs-1.jpg" class="img-fluid" alt="">
+              <img src="assets/img/chefs/chefs-3.jpg" class="img-fluid" alt="">
               <div class="member-info">
                 <div class="member-info-content">
                   <h4>Tayo Conga</h4>
-                  <span>Lead Percussionist </span>
+                  <span></span>
                 </div>
                 <div class="social">
                   <a href=""><i class="bi bi-twitter"></i></a>
@@ -346,106 +354,150 @@ who is more than happy and ready to work with you, regarding any event or projec
 
       </div>
     </section>
-    <!-- ======= Specials Section ======= -->
-    <section id="specials" class="specials">
+    <!-- ======= Menu Section ======= -->
+    <section id="gallery" class="gallery">
+
       <div class="container" data-aos="fade-up">
-
         <div class="section-title">
-          <h2>Events</h2>
-          <p>Call us and let us help you with your events</p>
+          <h2>Gallery</h2>
+          <p>Some photos Of me and the beautiful people and beautiful places I have been in Africa doing what I love doing the most</p>
         </div>
+      </div>
 
-        <div class="row" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-3">
-            <ul class="nav nav-tabs flex-column">
-              <li class="nav-item">
-                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Parties </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Meetings</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Concerts & Festivals</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tab-4">Tours</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tab-5">Private Events and more</a>
-              </li>
-            </ul>
-          </div><!--212529 backround Color-->
-          <div class="col-lg-9 mt-4 mt-lg-0">
-            <div class="tab-content">
-              <div class="tab-pane active show" id="tab-1">
-                <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Tayo Conga brings an energtic </h3>
-                    <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
-                    <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
-                  </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/specials-1.png" alt="" class="img-fluid">
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane" id="tab-2">
-                <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Et blanditiis nemo veritatis excepturi</h3>
-                    <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
-                    <p>Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia et reiciendis sunt sunt est. Non aliquid repellendus itaque accusamus eius et velit ipsa voluptates. Optio nesciunt eaque beatae accusamus lerode pakto madirna desera vafle de nideran pal</p>
-                  </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="./assests/img/1.png" alt="" class="img-fluid">
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane" id="tab-3">
-                <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Impedit facilis occaecati odio neque aperiam sit</h3>
-                    <p class="fst-italic">Eos voluptatibus quo. Odio similique illum id quidem non enim fuga. Qui natus non sunt dicta dolor et. In asperiores velit quaerat perferendis aut</p>
-                    <p>Iure officiis odit rerum. Harum sequi eum illum corrupti culpa veritatis quisquam. Neque necessitatibus illo rerum eum ut. Commodi ipsam minima molestiae sed laboriosam a iste odio. Earum odit nesciunt fugiat sit ullam. Soluta et harum voluptatem optio quae</p>
-                  </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/specials-3.png" alt="" class="img-fluid">
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane" id="tab-4">
-                <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Fuga dolores inventore laboriosam ut est accusamus laboriosam dolore</h3>
-                    <p class="fst-italic">Totam aperiam accusamus. Repellat consequuntur iure voluptas iure porro quis delectus</p>
-                    <p>Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum ipsam necessitatibus aliquam fugiat debitis quis velit. Eum ex maxime error in consequatur corporis atque. Eligendi asperiores sed qui veritatis aperiam quia a laborum inventore</p>
-                  </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/specials-4.png" alt="" class="img-fluid">
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane" id="tab-5">
-                <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Private Events</h3>
-                    <p class="fst-italic">Allow our group of talented eccentric performers to brighten up your  private events .</p>
-                    <p>We provide upmost discretion and make sure to give you and your friends or assiosiates </p>
-                  </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/specials-5.png" alt="" class="img-fluid">
-                  </div>
-                </div>
-              </div>
+      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-0">
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-1.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-1.jpg" alt="" class="img-fluid">
+              </a>
             </div>
           </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-2.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-2.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-3.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-3.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-4.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-4.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>   <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-4.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-4.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>   <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-4.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-4.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>   <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-4.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-4.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>   <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-4.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-4.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>   <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-4.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-4.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>   <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-4.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-4.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>   <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-4.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-4.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>   <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-4.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-4.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>   <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-4.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-4.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-5.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-5.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-6.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-6.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-7.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-7.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-8.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery-8.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
         </div>
 
       </div>
-    </section><!-- End Specials Section -->
+    </section><!-- End Menu Section -->
+
+    
+    <!-- ======= Specials Section ======= -->
+   <!-- End Specials Section -->
 
     <!-- ======= Events Section ======= -->
-    <section id="events" class="events">
+    <section id="events" class="events" hidden>
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -543,7 +595,7 @@ who is more than happy and ready to work with you, regarding any event or projec
     </section><!-- End Events Section -->
 
     <!-- ======= Book A Table Section ======= -->
-    <section id="book-a-table" class="book-a-table">
+    <section id="book-a-table" class="book-a-table" hidden>
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -807,7 +859,7 @@ who is more than happy and ready to work with you, regarding any event or projec
             <h4>Our Services</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Tourist Guide</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Live Performance/a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Live Performance</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Private Events</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Concerts</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Consultation</a></li>
