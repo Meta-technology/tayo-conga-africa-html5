@@ -36,10 +36,11 @@
 </head>
 
 <body>
-  <audio controls autoplay hidden> 
-    <source src="GFG.ogg" type="audio/ogg"> 
-    <source src="intro.mp3" type="audio/mpeg"> 
-</audio> 
+  <iframe src="intro.mp3" allow="autoplay"  style="display:none id="iframeAudio">
+  </iframe> 
+  <audio autoplay   id="playAudio">
+    <source src="intro.mp3">
+</audio>
   <!-- ======= Top Bar ======= -->
   <div id="topbar" class="d-flex align-items-center fixed-top">
     <div class="container d-flex justify-content-center justify-content-md-between">
