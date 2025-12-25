@@ -275,4 +275,45 @@
     })
   });
 
+  // Concert modal auto-show and WhatsApp form handling
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      const modalEl = document.getElementById('concertModal')
+      if (modalEl) {
+        try {
+          const bsModal = new bootstrap.Modal(modalEl)
+          bsModal.show()
+        } catch (e) {
+          console.warn('Bootstrap modal not available', e)
+        }
+      }
+    }, 900)
+
+    const sendToWhatsApp = (contactValue) => {
+      if (!contactValue) return
+      const waNumber = '2347036477135' // WhatsApp number in international format without +
+      const message = `Hello, I'm interested in the Tayo Conga concert on 28 Dec 2025. Contact: ${contactValue}`
+      const url = 'https://wa.me/' + waNumber + '?text=' + encodeURIComponent(message)
+      window.open(url, '_blank')
+    }
+
+    const concertForm = document.getElementById('concertForm')
+    if (concertForm) {
+      concertForm.addEventListener('submit', function (e) {
+        e.preventDefault()
+        const v = document.getElementById('contactInfo').value.trim()
+        sendToWhatsApp(v)
+      })
+    }
+
+    const heroForm = document.getElementById('concertHeroForm')
+    if (heroForm) {
+      heroForm.addEventListener('submit', function (e) {
+        e.preventDefault()
+        const v = document.getElementById('concertHeroInput').value.trim()
+        sendToWhatsApp(v)
+      })
+    }
+  })
+
 })()
