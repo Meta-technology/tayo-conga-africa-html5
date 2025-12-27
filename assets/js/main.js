@@ -281,13 +281,30 @@
       const modalEl = document.getElementById('concertModal')
       if (modalEl) {
         try {
-          const bsModal = new bootstrap.Modal(modalEl)
+          let bsModal = new bootstrap.Modal(modalEl)
           bsModal.show()
+
+          // Remove the modal element from the DOM when it's fully hidden
+          modalEl.addEventListener('hidden.bs.modal', function () {
+            try { bsModal.dispose() } catch (e) { /* ignore */ }
+            if (modalEl.parentNode) modalEl.parentNode.removeChild(modalEl)
+          })
         } catch (e) {
           console.warn('Bootstrap modal not available', e)
         }
       }
     }, 900)
+
+    // Custom event-modal: remove when its close button is clicked
+    const eventModalEl = document.getElementById('event-modal')
+    if (eventModalEl) {
+      const closeBtn = eventModalEl.querySelector('.event-modal-close')
+      if (closeBtn) {
+        closeBtn.addEventListener('click', function () {
+          if (eventModalEl.parentNode) eventModalEl.parentNode.removeChild(eventModalEl)
+        })
+      }
+    }
 
     const sendToWhatsApp = (contactValue) => {
       if (!contactValue) return
